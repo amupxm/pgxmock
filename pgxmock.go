@@ -28,6 +28,7 @@ import (
 // for any kind of database action in order to mock
 // and test real database behavior.
 type pgxMockIface interface {
+	BeginTx(ctx context.Context, txOptions pgx.TxOptions) (pgx.Tx, error)
 	// ExpectClose queues an expectation for this database
 	// action to be triggered. the *ExpectedClose allows
 	// to mock database response
