@@ -1,5 +1,5 @@
-[![Go Reference](https://pkg.go.dev/badge/github.com/pashagolub/pgxmock.svg)](https://pkg.go.dev/github.com/pashagolub/pgxmock)
-[![Go Report Card](https://goreportcard.com/badge/github.com/pashagolub/pgxmock)](https://goreportcard.com/report/github.com/pashagolub/pgxmock)
+[![Go Reference](https://pkg.go.dev/badge/github.com/amupxm/pgxmock.svg)](https://pkg.go.dev/github.com/amupxm/pgxmock)
+[![Go Report Card](https://goreportcard.com/badge/github.com/amupxm/pgxmock)](https://goreportcard.com/report/github.com/amupxm/pgxmock)
 [![Coverage Status](https://coveralls.io/repos/github/pashagolub/pgxmock/badge.svg?branch=master)](https://coveralls.io/github/pashagolub/pgxmock?branch=master)
 
 
@@ -18,16 +18,16 @@ It's based on the well-known [sqlmock](https://github.com/DATA-DOG/go-sqlmock) l
 
 ## Install
 
-    go get github.com/pashagolub/pgxmock
+    go get github.com/amupxm/pgxmock
 
 ## Documentation and Examples
 
-Visit [godoc](http://pkg.go.dev/github.com/pashagolub/pgxmock) for general examples and public api reference.
+Visit [godoc](http://pkg.go.dev/github.com/amupxm/pgxmock) for general examples and public api reference.
 
 See implementation examples:
 
-- [blog API server](https://github.com/pashagolub/pgxmock/tree/master/examples/blog)
-- [the same orders example](https://github.com/pashagolub/pgxmock/tree/master/examples/orders)
+- [blog API server](https://github.com/amupxm/pgxmock/tree/master/examples/blog)
+- [the same orders example](https://github.com/amupxm/pgxmock/tree/master/examples/orders)
 
 ### Something you may want to test
 
@@ -93,7 +93,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/pashagolub/pgxmock"
+	"github.com/amupxm/pgxmock"
 )
 
 // a successful case
@@ -172,7 +172,7 @@ provide a standard sql parsing matchers.
 ## Matching arguments like time.Time
 
 There may be arguments which are of `struct` type and cannot be compared easily by value like `time.Time`. In this case
-**pgxmock** provides an [Argument](https://pkg.go.dev/github.com/pashagolub/pgxmock#Argument) interface which
+**pgxmock** provides an [Argument](https://pkg.go.dev/github.com/amupxm/pgxmock#Argument) interface which
 can be used in more sophisticated matching. Here is a simple example of time argument matching:
 
 ``` go

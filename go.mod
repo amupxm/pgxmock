@@ -1,4 +1,4 @@
-module github.com/pashagolub/pgxmock
+module github.com/amupxm/pgxmock
 
 go 1.17
 
